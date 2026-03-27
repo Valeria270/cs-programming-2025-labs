@@ -2,17 +2,17 @@
 #include <locale.h>
 int main(){
 	setlocale(LC_ALL, "Russian");
-	double matrix3x3 [3] [3];
+	double N [4] [4];
 	double mainDiagSum =0, sideDiagSum =0;
-	printf("¬ведите элементы матрици 3x3:\n");
-	for (int i=0; i<3; i++) {
-		for (int j=0; j<3; j++) {
-			scanf ("%lf", &matrix3x3 [i] [j] );
+	printf("¬ведите элементы матрици 4x4:\n");
+	for (int i=0; i<4; i++) {
+		for (int j=0; j<4; j++) {
+			scanf ("%lf", &N [i] [j] );
 			if ( i==j) {
-				mainDiagSum += matrix3x3 [i] [j];
+				mainDiagSum += N [i] [j];
 		    }
 		    if (i + j == 2){
-		    	sideDiagSum += matrix3x3 [i] [j]; 	    
+		    	sideDiagSum += N [i] [j]; 	    
 			}
 		}
     printf("—сумма главной диагонали: %.2lf\n", mainDiagSum);
