@@ -6,7 +6,6 @@ int main() {
     double a, b, c;
     double D, x1, x2;
     do{
-	
 	    printf("введите коэффициенты уравнения(a, b, c):");
 	    if (scanf(" %lf %lf %lf", &a, &b, &c) !=3) {
 	    	printf("mistake.\\n");
